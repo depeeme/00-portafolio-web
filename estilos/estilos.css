@@ -1,0 +1,103 @@
+
+/*Introduccion*/
+div.intro {
+    width: 400px;
+    padding: 15px 0px 0px 15px;
+    position:absolute;
+}
+div.intro p {
+    font-size: 20px;
+}
+
+/*span de la foto mia*/
+div.intro .hover_img a {position:relative;}
+div.intro .hover_img a span {
+    position:absolute;
+    display:none;
+    z-index:1;
+    left: 5%;
+    top:500px;
+}
+div.intro .hover_img a:hover span {display:block;}
+
+/* parrafo de favoritos*/
+div.favoritxs {
+    top:250px;
+    padding: 15px 0px 0px 15px; 
+    font-size: 20px; 
+    position: absolute;}
+.favoritxs h3{font-size: 20px; line-height: 8px;}
+.favoritxs h3 a {font-size: 8px;}
+.favoritxs p.fecha-favs {font-size:8px; line-height: 8px;}
+.favoritxs p.links-favs {font-size:20px; line-height: 0px;}
+
+
+#movible {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    left: 400px;
+    top: 500px;
+    width: 500xp;
+    height: 500px;
+    transform: translate(-50%, -50%);
+  }
+  
+#encabezado {
+padding: 10px;
+cursor: move;
+z-index: 10;
+background-color: #2196F3;
+color: #fff;
+}
+
+div.cursor div {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 32px;
+    height: 32px;
+    z-index:99;
+    pointer-events: none;
+}
+
+div.cursor div span {
+    position:absolute;
+    top: -150%;
+    left:20px;
+    width: 200px;
+    display: flex;
+    align-content: space-around;
+    text-align: center;
+    font-size: 17px;
+    opacity: 0;
+    background-color: blue;
+    padding: 10px;
+    line-height: 19px;
+}
+
+div.cursor div span.visible {
+    opacity: 1;
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+    background-color: cornsilk;
+    width: 100%;
+}
+footer div {padding: 5  px 5px 0px 15px;}
+
+footer div p {
+    line-height: 10px;
+    font-size: 8px;
+}
+
+div.lista {
+    position: fixed;
+    right: 0px;
+    bottom: 20px;
+    padding: 15px;
+}
